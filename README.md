@@ -4,6 +4,30 @@ It will be a progressive web application (PWA) built with React using a test-dri
 development (TDD) technique. The application uses the Google Calendar API to fetch
 upcoming events.
 
+### Feature 1: Filter Events by City
+
+User Story: As a user I should be able to “filter events by city”, so that I can see the list of events
+that take place in that city
+
+Scenario 1: When user hasn’t searched for a city, show upcoming events from all cities.
+
+- Given user hasn’t searched for any city
+- When the user opens the app
+- Then the user should see the list of upcoming events from around the world.
+
+Scenario 2: Show a List of Suggestions During Search
+
+- Given the main page is open
+- When user starts typing in the city textbox
+- Then the user should receive a list of cities (suggestions) that match what they’ve typed
+
+Scenario 3: User can select a city from the suggested list
+
+- Given user was typing “Berlin” in the city textbox and the list of suggested cities is showing
+- When the user selects a city (e.g., “Berlin, Germany”) from the list
+  then their city should be changed to that city (i.e., “Berlin, Germany”)
+- And the user should receive a list of upcoming events in that city.
+
 ### FEATURE 2: SHOW/HIDE an event's details
 
 User Story: As a user, I should be able to expand or collapse additional information, so that I
