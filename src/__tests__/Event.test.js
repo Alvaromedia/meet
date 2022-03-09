@@ -29,9 +29,15 @@ describe('<Event /> component', () => {
     expect(EventWrapper.find('.showDetails')).toHaveLength(1);
   });
 
-  // test('render hideDetails button', () => {
-  //   expect(EventWrapper.find('.hideDetails')).toHaveLength(1);
-  // });
+  /*   
+  Fixed code by Blaise
+  test('render hideDetails button', () => {
+    EventWrapper.setState({
+      collapsed: false,
+    });
+    expect(EventWrapper.find('.hideDetails')).toHaveLength(1);
+  });
+ */
 
   test('show details on click', () => {
     EventWrapper.setState({
